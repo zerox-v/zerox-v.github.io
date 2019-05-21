@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>World of Forks</title>
+  <title>Ioinc.Fun</title>
   
-  <subtitle>Kevin&#39;s Home</subtitle>
+  <subtitle>Code Change The World</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://keyin.me/"/>
+  <link href="http://blog.ionic.fun/"/>
   <updated>2019-05-20T08:59:28.404Z</updated>
-  <id>http://keyin.me/</id>
+  <id>http://blog.ionic.fun/</id>
   
   <author>
-    <name>Kevin Tan</name>
+    <name>Zero</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://keyin.me/2019/05/20/hello-world/"/>
-    <id>http://keyin.me/2019/05/20/hello-world/</id>
+    <link href="http://blog.ionic.fun/2019/05/20/hello-world/"/>
+    <id>http://blog.ionic.fun/2019/05/20/hello-world/</id>
     <published>2019-05-20T08:59:28.404Z</published>
     <updated>2019-05-20T08:59:28.404Z</updated>
     
