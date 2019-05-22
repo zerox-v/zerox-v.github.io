@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.ionic.fun/"/>
-  <updated>2019-05-21T07:27:12.414Z</updated>
+  <updated>2019-05-22T09:33:42.247Z</updated>
   <id>http://blog.ionic.fun/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>LayUI Table 添加禁止选中</title>
+    <link href="http://blog.ionic.fun/2019/05/22/LayUI-Table-%E6%B7%BB%E5%8A%A0%E7%A6%81%E6%AD%A2%E9%80%89%E4%B8%AD/"/>
+    <id>http://blog.ionic.fun/2019/05/22/LayUI-Table-添加禁止选中/</id>
+    <published>2019-05-22T06:16:35.000Z</published>
+    <updated>2019-05-22T09:33:42.247Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;LayUI这几年比较流行,里面的Table组件也比较强大，但是前面的CheckBox没有禁止选中功能，今天就来试试，看看能不能给添加一个禁止选中功能。&lt;/p&gt;
+&lt;h2 id=&quot;Fork-LayUI源码&quot;&gt;&lt;a href=&quot;#Fork-LayUI源码&quot; class=&quot;head
+      
+    
+    </summary>
+    
+      <category term="LayUI" scheme="http://blog.ionic.fun/categories/LayUI/"/>
+    
+    
+      <category term="LayUI" scheme="http://blog.ionic.fun/tags/LayUI/"/>
+    
+      <category term="Table" scheme="http://blog.ionic.fun/tags/Table/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="http://blog.ionic.fun/2019/05/20/hello-world/"/>
     <id>http://blog.ionic.fun/2019/05/20/hello-world/</id>
     <published>2019-05-20T08:59:28.404Z</published>
-    <updated>2019-05-21T07:27:12.414Z</updated>
+    <updated>2019-05-22T06:18:23.073Z</updated>
     
     <summary type="html">
     
@@ -34,8 +60,6 @@
     
       <category term="Hello" scheme="http://blog.ionic.fun/categories/Hello/"/>
     
-    
-      <category term="Asp.Net,Dent" scheme="http://blog.ionic.fun/tags/Asp-Net-Dent/"/>
     
   </entry>
   
