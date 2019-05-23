@@ -133,4 +133,4 @@ feed:
 deploy:
   type: git
   repo: https://github.com/ZeroX-V/zerox-v.github.io
-  branch: published
+  branch: master
