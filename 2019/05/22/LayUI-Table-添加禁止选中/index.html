@@ -20,17 +20,17 @@
 <meta property="og:site_name" content="Ioinc.Fun">
 <meta property="og:description" content="LayUI这几年比较流行,里面的Table组件也比较强大，但是前面的CheckBox没有禁止选中功能，今天就来试试，看看能不能给添加一个禁止选中功能。 Fork LayUI源码 LayUI项目地址 Clone到本地 找到src里面lay下面的modules文件夹里面的table.js  添加字段标记 参照这里我们也添加一个”IS_DISABLE”的标记  添加完如下 12345config: &amp;#">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://pruksi5mp.bkt.clouddn.com/2019-05-22-16-14-50.png">
-<meta property="og:image" content="http://pruksi5mp.bkt.clouddn.com/2019-05-22-14-55-15.png">
-<meta property="og:image" content="http://pruksi5mp.bkt.clouddn.com/2019-05-22-16-02-15.png">
-<meta property="og:image" content="http://pruksi5mp.bkt.clouddn.com/2019-05-22-16-12-51.png">
-<meta property="og:image" content="http://pruksi5mp.bkt.clouddn.com/2019-05-22-16-13-23.png">
-<meta property="og:image" content="http://pruksi5mp.bkt.clouddn.com/1234.gif">
-<meta property="og:updated_time" content="2019-05-22T09:33:42.247Z">
+<meta property="og:image" content="http://qiniu.ionic.fun/2019-05-22-16-14-50.png">
+<meta property="og:image" content="http://qiniu.ionic.fun/2019-05-22-14-55-15.png">
+<meta property="og:image" content="http://qiniu.ionic.fun/2019-05-22-16-02-15.png">
+<meta property="og:image" content="http://qiniu.ionic.fun/2019-05-22-16-12-51.png">
+<meta property="og:image" content="http://qiniu.ionic.fun/2019-05-22-16-13-23.png">
+<meta property="og:image" content="http://qiniu.ionic.fun/1234.gif">
+<meta property="og:updated_time" content="2019-06-26T08:48:02.537Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="LayUI Table 添加禁止选中">
 <meta name="twitter:description" content="LayUI这几年比较流行,里面的Table组件也比较强大，但是前面的CheckBox没有禁止选中功能，今天就来试试，看看能不能给添加一个禁止选中功能。 Fork LayUI源码 LayUI项目地址 Clone到本地 找到src里面lay下面的modules文件夹里面的table.js  添加字段标记 参照这里我们也添加一个”IS_DISABLE”的标记  添加完如下 12345config: &amp;#">
-<meta name="twitter:image" content="http://pruksi5mp.bkt.clouddn.com/2019-05-22-16-14-50.png">
+<meta name="twitter:image" content="http://qiniu.ionic.fun/2019-05-22-16-14-50.png">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -162,21 +162,21 @@
 <li>找到src里面lay下面的modules文件夹里面的table.js</li>
 </ul>
 <h2 id="添加字段标记"><a href="#添加字段标记" class="headerlink" title="添加字段标记"></a>添加字段标记</h2><ul>
-<li><p>参照这里我们也添加一个”IS_DISABLE”的标记<br><img src="http://pruksi5mp.bkt.clouddn.com/2019-05-22-16-14-50.png" alt="2019-05-22-16-14-50"></p>
+<li><p>参照这里我们也添加一个”IS_DISABLE”的标记<br><img src="http://qiniu.ionic.fun/2019-05-22-16-14-50.png" alt="2019-05-22-16-14-50"></p>
 </li>
 <li><p>添加完如下</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">config: &#123;</span><br><span class="line">           checkName: <span class="string">'LAY_CHECKED'</span>, <span class="comment">//是否选中状态的字段名</span></span><br><span class="line">           indexName: <span class="string">'LAY_TABLE_INDEX'</span>, <span class="comment">//下标索引名</span></span><br><span class="line">           disableName: <span class="string">'LAY_DISABLED'</span> <span class="comment">//是否禁用</span></span><br><span class="line">       &#125; <span class="comment">//全局配置项</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h2 id="修改代码逻辑"><a href="#修改代码逻辑" class="headerlink" title="修改代码逻辑"></a>修改代码逻辑</h2><ul>
-<li><p>找到区域模板里面的  <code>lay-filter=&quot;layTableAllChoose&quot;</code><br><img src="http://pruksi5mp.bkt.clouddn.com/2019-05-22-14-55-15.png" alt="2019-05-22-14-55-15"></p>
+<li><p>找到区域模板里面的  <code>lay-filter=&quot;layTableAllChoose&quot;</code><br><img src="http://qiniu.ionic.fun/2019-05-22-14-55-15.png" alt="2019-05-22-14-55-15"></p>
 </li>
 <li><p>在后面添加如下代码</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;# if(item2[d.data.disableName])&#123; &#125;&#125; disabled &#123;&#123;# &#125;; &#125;&#125;</span><br></pre></td></tr></table></figure>
 <ul>
-<li><p>添加列渲染<br><img src="http://pruksi5mp.bkt.clouddn.com/2019-05-22-16-02-15.png" alt="2019-05-22-16-02-15"></p>
+<li><p>添加列渲染<br><img src="http://qiniu.ionic.fun/2019-05-22-16-02-15.png" alt="2019-05-22-16-02-15"></p>
 </li>
-<li><p>修改选择逻辑<br><img src="http://pruksi5mp.bkt.clouddn.com/2019-05-22-16-12-51.png" alt="2019-05-22-16-12-51"><br><img src="http://pruksi5mp.bkt.clouddn.com/2019-05-22-16-13-23.png" alt="2019-05-22-16-13-23"></p>
+<li><p>修改选择逻辑<br><img src="http://qiniu.ionic.fun/2019-05-22-16-12-51.png" alt="2019-05-22-16-12-51"><br><img src="http://qiniu.ionic.fun/2019-05-22-16-13-23.png" alt="2019-05-22-16-13-23"></p>
 </li>
 </ul>
 </li>
@@ -184,7 +184,7 @@
 </ul>
 <h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><ul>
 <li>在数据里面添加 <code>&quot;LAY_DISABLED&quot;: true,</code></li>
-<li>来看看效果<br><img src="http://pruksi5mp.bkt.clouddn.com/1234.gif" alt="1234"></li>
+<li>来看看效果<br><img src="http://qiniu.ionic.fun/1234.gif" alt="1234"></li>
 </ul>
 <h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><ul>
 <li><a href="https://github.com/ZeroX-V/layui/blob/master/src/lay/modules/table.js" target="_blank" rel="noopener">点这里看源码</a></li>
@@ -296,7 +296,7 @@
     
         <li><a class="flat-box" href="/categories/Hello/"><div class="name">Hello</div><div class="badget">1</div></a></li>
     
-        <li><a class="flat-box" href="/categories/LayUI/"><div class="name">LayUI</div><div class="badget">1</div></a></li>
+        <li><a class="flat-box" href="/categories/LayUI/"><div class="name">LayUI</div><div class="badget">2</div></a></li>
     
     </ul>
     
