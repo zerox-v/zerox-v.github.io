@@ -15,7 +15,7 @@ LayUI这几年比较流行,里面的Table组件也比较强大，但是前面的
 
 ## 添加字段标记
 - 参照这里我们也添加一个"IS_DISABLE"的标记
-![2019-05-22-16-14-50](http://qiniu.ionic.fun/2019-05-22-16-14-50.png)
+![2019-05-22-16-14-50](//qiniu.ionic.fun/2019-05-22-16-14-50.png)
 
 - 添加完如下
 ```javascript
@@ -28,18 +28,18 @@ LayUI这几年比较流行,里面的Table组件也比较强大，但是前面的
 ## 修改代码逻辑
 
 - 找到区域模板里面的  ` lay-filter="layTableAllChoose" `
-![2019-05-22-14-55-15](http://qiniu.ionic.fun/2019-05-22-14-55-15.png)
+![2019-05-22-14-55-15](//qiniu.ionic.fun/2019-05-22-14-55-15.png)
 
 - 在后面添加如下代码
 ``` javascrtpt
  {{# if(item2[d.data.disableName]){ }} disabled {{# }; }} 
  ```
  - 添加列渲染
- ![2019-05-22-16-02-15](http://qiniu.ionic.fun/2019-05-22-16-02-15.png)
+ ![2019-05-22-16-02-15](//qiniu.ionic.fun/2019-05-22-16-02-15.png)
 
  - 修改选择逻辑
- ![2019-05-22-16-12-51](http://qiniu.ionic.fun/2019-05-22-16-12-51.png)
- ![2019-05-22-16-13-23](http://qiniu.ionic.fun/2019-05-22-16-13-23.png)
+ ![2019-05-22-16-12-51](//qiniu.ionic.fun/2019-05-22-16-12-51.png)
+ ![2019-05-22-16-13-23](//qiniu.ionic.fun/2019-05-22-16-13-23.png)
 - [详细修改请点这里](https://github.com/ZeroX-V/layui/commit/a9b20f55c9881916125b9e9e62a1c33b4804a351?diff=unified)
  
 
@@ -47,7 +47,7 @@ LayUI这几年比较流行,里面的Table组件也比较强大，但是前面的
 
  - 在数据里面添加 `"LAY_DISABLED": true,`
  - 来看看效果
-![1234](http://qiniu.ionic.fun/1234.gif)
+![1234](//qiniu.ionic.fun/1234.gif)
 
 ## 源码
  - [点这里看源码](https://github.com/ZeroX-V/layui/blob/master/src/lay/modules/table.js)
