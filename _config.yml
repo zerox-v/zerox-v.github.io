@@ -3,17 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Ioinc.Fun
+title: TIGA.FUN
 subtitle: Code Change The World
 description: A blog of zero
 keywords:
   - blog
-  - stkevintan
   - IT
   - Web Front End
   - ZeroX
   - ZeroX-V
-  - 964849125@qq.com
+  - zero@ionic.fun
 author: Zero
 avatar: /images/avatar.jpg
 favicon: /images/favicon.ico
@@ -22,7 +21,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://blog.ionic.fun
+url: https://tiga.fun
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
