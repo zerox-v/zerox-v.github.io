@@ -1,6 +1,6 @@
 ---
 title: LayUI-Table-调整列宽后点击分页列宽还原问题
-date: 2019-06-19 11:26:50
+date: 2024-06-19 11:26:50
 tags: 
 - LayUI
 - Table
