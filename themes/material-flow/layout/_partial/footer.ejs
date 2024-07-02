@@ -1,0 +1,27 @@
+<footer id="footer" class="clearfix">
+
+    <div class="social-wrapper">
+        <% if (theme.social) { %>
+            <% theme.social.forEach(function(value, key) {
+           if (value.url && value.slug) { %>
+                <a href="<%= value.url %>" class="social <%= value.slug %>" target="_blank" rel="external">
+          <span class="icon icon-<%= value.slug %>"></span>
+        </a>
+                <% } }); %>
+                    <% } %>
+    </div>
+
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: center;">&nbsp;&nbsp;Copyright 2019-2024&nbsp;&nbsp;<a class="codename" href="/">TIGA.FUN.</a> &nbsp;&nbsp;All rights reserved. &nbsp;&nbsp;&nbsp;&nbsp; <a class="codename" target="_bank" href="https://beian.miit.gov.cn">渝ICP备18004897号-3</a> &nbsp;&nbsp; &nbsp;&nbsp;
+        <a href="https://beian.mps.gov.cn/#/query/webSearch?code=50010802005731" rel="noreferrer" class="codename" target="_blank">渝公网安备50010802005731</a></div>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?2550e312547d25ba9f80edf68c682ffb";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</footer>
