@@ -35,6 +35,9 @@ menu:
   - name: About
     slug: about
     url: /about
+  - name: AI 助手
+    slug: chat-ai
+    url: https://ai.ionic.fun
 
 # widgets
 widgets:
