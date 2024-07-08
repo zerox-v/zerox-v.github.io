@@ -10,7 +10,7 @@
 	</time>
         <%- partial('categories',{post:post}) %>
     </section>
-    <% if(post.toc!==false){ %>
+    <% if(post.toc!==false&&toc(post.content)){ %>
         <section class="toc-wrapper">
             <%- toc(post.content) %>
         </section>
